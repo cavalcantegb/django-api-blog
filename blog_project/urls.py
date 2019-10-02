@@ -21,7 +21,7 @@ from rest_framework.schemas import get_schema_view
 API_TITLE = 'Blog API'
 API_DESCRIPTION = 'A Web API for creating and editing blog posts.'
 
-schema_view = get_schema_view(title=API_TITLE)
+schema_view = get_swagger_view(title=API_TITLE)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
