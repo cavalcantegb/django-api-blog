@@ -33,4 +33,5 @@ urlpatterns = [
     path('docs/', include_docs_urls(title=API_TITLE,
                                     description=API_DESCRIPTION)),
     path('schema/', schema_view),
+    path('swagger-docs/', schema_view),
 ]
